@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Encontro Brasileiro de Pilates 2027 | Exclusivo Licenciados e Treinadores VOLL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F4EDE0;
+  --paper2:#EDE4D2;
+  --ink:#241D16;
+  --sepia:#5C4A38;
+  --brass:#A07E3B;
+  --oxblood:#5E2A24;
+  --line:#D8CCB6;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;font-size:17px;line-height:1.65}
+.serif{font-family:'Fraunces',Georgia,serif}
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+
+header{border-bottom:1px solid var(--line);padding:18px 0}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.marca{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px}
+.marca em{font-style:italic;color:var(--brass)}
+.tag-exclusivo{font-size:13px;font-weight:600;color:var(--paper);background:var(--oxblood);padding:8px 16px;border-radius:999px}
+
+.hero{padding:72px 0 56px}
+.hero .rotulo{font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:19px;color:var(--brass)}
+.hero h1{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(38px,6vw,68px);line-height:1.05;letter-spacing:-.01em;margin:14px 0 0}
+.hero .datas{margin-top:26px;display:flex;gap:14px;flex-wrap:wrap}
+.pill{background:#fff;border:1px solid var(--line);border-radius:999px;padding:10px 22px;font-size:15px;font-weight:600}
+.pill strong{color:var(--oxblood)}
+
+.carta-abertura{background:var(--paper2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:64px 0}
+.carta-abertura p{max-width:720px;font-size:18px;color:#3A2F24;margin-bottom:18px}
+.carta-abertura p:first-of-type{font-family:'Fraunces',Georgia,serif;font-size:24px;line-height:1.5;color:var(--ink)}
+.assinatura{margin-top:28px}
+.assinatura .nome{font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:26px;color:var(--ink)}
+.assinatura .cargo{font-size:14px;color:var(--sepia);margin-top:2px}
+
+section{padding:72px 0}
+h2{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(30px,4vw,44px);line-height:1.1;letter-spacing:-.01em}
+.sub{font-size:17px;color:var(--sepia);margin-top:12px;max-width:680px}
+.rotulo{font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:19px;color:var(--brass);margin-bottom:12px}
+
+/* janela promocional */
+.janela{background:var(--ink);color:#EFE6D5;border-radius:10px;padding:44px;margin-top:44px;display:grid;grid-template-columns:1fr 1fr;gap:36px}
+@media (max-width:760px){.janela{grid-template-columns:1fr;padding:32px 26px}}
+.janela .grande{font-family:'Fraunces',Georgia,serif;font-size:clamp(28px,3.6vw,40px);font-weight:600;color:#D8B871;line-height:1.15}
+.janela p{font-size:16px;opacity:.92;margin-top:12px}
+.vagas{display:flex;gap:0}
+.vaga{flex:1;text-align:center;border-left:1px solid rgba(239,230,213,.25);padding:6px 10px}
+.vaga:first-child{border-left:none}
+.vaga .n{font-family:'Fraunces',Georgia,serif;font-size:42px;font-weight:600;color:#D8B871;line-height:1}
+.vaga .t{font-size:13px;margin-top:8px;opacity:.85}
+.janela .regrinha{grid-column:1 / -1;border-top:1px solid rgba(239,230,213,.25);padding-top:20px;font-size:15px;opacity:.9}
+
+/* preços */
+.precos{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+@media (max-width:820px){.precos{grid-template-columns:1fr}}
+.preco{background:#fff;border:1px solid var(--line);border-radius:10px;padding:34px 30px;position:relative}
+.preco.vip{border-color:var(--brass);box-shadow:0 6px 24px rgba(160,126,59,.12)}
+.lote{position:absolute;top:-13px;left:26px;background:var(--brass);color:#fff;font-size:12px;font-weight:700;letter-spacing:.04em;padding:5px 14px;border-radius:999px}
+.preco h3{font-family:'Fraunces',Georgia,serif;font-size:26px;font-weight:600}
+.preco .parcela{font-size:16px;color:var(--sepia);margin-top:16px}
+.preco .parcela strong{font-family:'Fraunces',Georgia,serif;font-size:30px;color:var(--ink);font-weight:600}
+.preco ul{list-style:none;margin-top:18px}
+.preco li{font-size:15px;color:#3A2F24;padding:7px 0;border-top:1px solid var(--paper2)}
+.preco li strong{color:var(--oxblood)}
+.preco .desc{margin-top:18px;background:var(--paper2);border-radius:8px;padding:12px 16px;font-size:14.5px}
+.preco .desc strong{color:var(--brass)}
+.preco s{color:var(--sepia);opacity:.75}
+
+/* passos */
+.passos3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
+@media (max-width:820px){.passos3{grid-template-columns:1fr}}
+.p3{border-top:3px solid var(--brass);padding-top:20px}
+.p3 .num{font-family:'Fraunces',Georgia,serif;font-size:40px;font-weight:300;color:var(--brass);line-height:1}
+.p3 h3{font-size:18px;font-weight:700;margin:12px 0 8px}
+.p3 p{font-size:15.5px;color:#4A3D2F}
+.btn{display:inline-block;background:var(--oxblood);color:#F7F0E4;font-weight:600;font-size:16px;padding:16px 34px;border-radius:999px;text-decoration:none;transition:transform .15s ease, box-shadow .15s ease;margin-top:40px}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(94,42,36,.25)}
+.nota-btn{display:block;margin-top:12px;font-size:14px;color:var(--sepia)}
+
+/* faq */
+.faq{background:var(--paper2);border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line);padding:22px 4px}
+.faq details:first-of-type{border-top:1px solid var(--line);margin-top:36px}
+.faq summary{font-family:'Fraunces',Georgia,serif;font-size:20px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:26px;color:var(--brass);font-weight:300;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin-top:12px;color:#4A3D2F;max-width:760px;font-size:16px}
+footer{padding:32px 0;font-size:13.5px;color:var(--sepia)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="marca">Encontro Brasileiro de <em>Pilates</em> 2027</div>
+    <div class="tag-exclusivo">Exclusivo Licenciados e Treinadores VOLL</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="rotulo">Condição exclusiva do Ecossistema VOLL</p>
+    <h1>As inscrições já abriram. A sua vem com o desconto de quem faz parte do Ecossistema.</h1>
+    <p class="sub" style="margin-top:20px;font-size:18px">Exclusivo para Licenciados e Treinadores VOLL. As inscrições para o Encontro 2027 já estão abertas ao público — mas você garante a sua vaga pagando menos, com o seu desconto aplicado sobre o lote de lançamento.</p>
+    <div class="datas">
+      <span class="pill"><strong>27 a 29 de agosto de 2027</strong> · Expo Dom Pedro, Campinas SP</span>
+      <span class="pill">VIP começa em <strong>26 de agosto</strong> com o Pilates Legend e aulas práticas</span>
+    </div>
+    <a class="btn" style="margin-top:32px" href="https://portal.grupovoll.com.br/">Garantir minha vaga com desconto</a>
+    <span class="nota-btn">Desconto de Ecossistema disponível a partir do meio-dia de 08 de setembro</span>
+    <a href="/" style="display:inline-block;margin-top:16px;font-size:14px;color:var(--sepia)">Não é o seu grupo? Ver todos os vínculos do Ecossistema</a>
+  </div>
+</section>
+
+<div class="carta-abertura">
+  <div class="wrap">
+    <p>Antes de mais nada, obrigado. O Encontro 2026 foi o evento mais épico da história da VOLL, e ele só foi possível porque vocês estavam lá. Sinceramente, ainda estamos sem palavras para tudo o que vivemos naqueles dias.</p>
+    <p>As inscrições para o Encontro 2027 já estão abertas ao público. Como reconhecimento a quem constrói esse ecossistema com a gente, você tem uma condição que não existe para o público geral: o seu desconto de Licenciado ou Treinador aplicado sobre o lote de lançamento. Abaixo está tudo o que você precisa saber, sem letra miúda.</p>
+    <div class="assinatura">
+      <div class="nome">Rafael Juliano, Henrique Wolf e Carolina Rorato</div>
+      <div class="cargo">Sócios da VOLL Pilates Group</div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <p class="rotulo">A janela promocional</p>
+    <h2>De 08 a 18 de setembro, ou até as vagas acabarem.</h2>
+    <div class="janela">
+      <div>
+        <div class="grande">Abre 08 de setembro,<br>ao meio dia.</div>
+        <p>As vagas promocionais são preenchidas por ordem de chegada. Regra simples: se o link estiver aberto para compra, ainda há vaga no valor promocional.</p>
+      </div>
+      <div>
+        <div class="vagas">
+          <div class="vaga"><div class="n">30</div><div class="t">vagas<br>Standard</div></div>
+          <div class="vaga"><div class="n">20</div><div class="t">vagas<br>Premium</div></div>
+          <div class="vaga"><div class="n">10</div><div class="t">vagas<br>VIP</div></div>
+        </div>
+      </div>
+      <div class="regrinha">Esta condição vale somente nesta janela e somente para você: a compra é restrita a quem faz parte do Ecossistema e não pode ser feita em nome de outra pessoa. Encerrada a janela, valem os lotes públicos do site oficial.</div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <p class="rotulo">Valores e descontos</p>
+    <h2>Lote de lançamento, com seu desconto aplicado por cima.</h2>
+    <p class="sub">Atenção ao que importa: os valores de Standard abaixo são os valores <strong>cheios</strong> do lote de lançamento, e o seu desconto de Licenciado ou Treinador é aplicado <strong>sobre eles</strong>, automaticamente, na hora da compra. Em resumo: você paga mais barato do que qualquer pessoa de fora do Ecossistema. No Premium e no VIP, os valores já aparecem calculados com o seu desconto. E os parcelamentos <strong>não têm juros</strong>: cartão em 12x e boleto em 10x somam o mesmo total. Quem paga à vista ganha um desconto adicional.</p>
+    <div class="precos">
+      <div class="preco">
+        <span class="lote">LOTE DE LANÇAMENTO</span>
+        <h3>Standard</h3>
+        <p class="parcela">12x de <strong>R$ 99</strong> no cartão</p>
+        <ul>
+          <li>Boleto em 10x de R$ 118,80, sem juros (mesmo total do cartão)</li>
+          <li>À vista com desconto: <strong>R$ 997</strong></li>
+          <li><strong>Somente 30 inscrições</strong> nesta condição</li>
+        </ul>
+        <div class="desc"><strong>Você paga menos que isso:</strong> os valores acima são os cheios. Seu desconto, do PRO I ao PRO VIII, incide sobre eles conforme o seu nível. Confira sua porcentagem no Acesso de Treinador, no Portal da VOLL.</div>
+      </div>
+      <div class="preco">
+        <span class="lote">LOTE DE LANÇAMENTO</span>
+        <h3>Premium</h3>
+        <p class="parcela">12x de <strong>R$ 159,20</strong> no cartão</p>
+        <ul>
+          <li>Boleto em 10x de R$ 191,04, sem juros (mesmo total do cartão)</li>
+          <li>À vista com desconto: <strong>R$ 1.592</strong></li>
+          <li><strong>Somente 20 inscrições</strong> nesta condição</li>
+        </ul>
+        <div class="desc"><strong>Valores já com seus 20% de desconto</strong> de Licenciado e Treinador, aplicados sobre o valor cheio do lote (12x de R$ 199 ou R$ 1.990 à vista).</div>
+      </div>
+      <div class="preco vip">
+        <span class="lote">LOTE DE LANÇAMENTO</span>
+        <h3>VIP</h3>
+        <p class="parcela">12x de <strong>R$ 359,10</strong> no cartão</p>
+        <ul>
+          <li>Boleto em 10x de R$ 430,92, sem juros (mesmo total do cartão)</li>
+          <li>À vista com desconto: <strong>R$ 3.510</strong></li>
+          <li><strong>Somente 10 inscrições</strong> nesta condição</li>
+          <li>Começa em <strong>26 de agosto</strong>: Pilates Legend e aulas práticas inclusos</li>
+        </ul>
+        <div class="desc"><strong>Valores já com seus 10% de desconto</strong> de Licenciado e Treinador, aplicados sobre o valor cheio do lote (12x de R$ 399 ou R$ 3.900 à vista).</div>
+      </div>
+    </div>
+    <div style="text-align:center">
+      <a class="btn" href="https://portal.grupovoll.com.br/">Quero garantir meu ingresso</a>
+      <span class="nota-btn">Desconto aplicado automaticamente na compra, sem cupom</span>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <p class="rotulo">Como se inscrever</p>
+    <h2>Três passos, cinco minutos.</h2>
+    <div class="passos3">
+      <div class="p3">
+        <div class="num">1</div>
+        <h3>Confira seu desconto no Portal da VOLL</h3>
+        <p>Abra o Portal da VOLL, entre no seu Acesso de Treinador e veja a porcentagem de desconto do Standard no seu nível. Premium e VIP têm desconto fixo de 20% e 10%, já calculados nos valores acima.</p>
+      </div>
+      <div class="p3">
+        <div class="num">2</div>
+        <h3>Acesse o link a partir do meio dia de 08/09</h3>
+        <p>A inscrição é feita exclusivamente pelo link abaixo. Link aberto significa vaga disponível no valor promocional.</p>
+      </div>
+      <div class="p3">
+        <div class="num">3</div>
+        <h3>Finalize com o desconto automático</h3>
+        <p>O desconto é aplicado sozinho na hora da compra, sem cupom. Escolha entre cartão em 12x, boleto em 10x ou à vista.</p>
+      </div>
+    </div>
+    <a class="btn" href="https://portal.grupovoll.com.br/">Fazer minha inscrição com desconto</a>
+    <span class="nota-btn">Desconto de Ecossistema disponível a partir do meio-dia de 08 de setembro</span>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <p class="rotulo">Perguntas e respostas</p>
+    <h2>O que você pode estar se perguntando</h2>
+    <details>
+      <summary>Posso comprar para outra pessoa com o valor promocional?</summary>
+      <p>Não. A condição é restrita a você, que faz parte do Ecossistema VOLL.</p>
+    </details>
+    <details>
+      <summary>Como sei se ainda tem vaga promocional?</summary>
+      <p>Se o link estiver aberto para compra, ainda há vaga. Quando as vagas da sua categoria acabarem, o link fecha.</p>
+    </details>
+    <details>
+      <summary>Posso me inscrever depois de 18 de setembro?</summary>
+      <p>Pode, pelos lotes públicos no site oficial do Encontro. A condição desta página, com desconto de Ecossistema sobre o lote de lançamento, vale somente nesta janela.</p>
+    </details>
+    <details>
+      <summary>Quem vem para o Pilates Legend?</summary>
+      <p>Já estão confirmados Thalyssa Larangeiras, Gloria Gasperi e Federico Randazzo. O Pilates Legend acontece em 26 de agosto e é exclusivo para quem tem ingresso VIP, com acesso já incluído.</p>
+    </details>
+    <details>
+      <summary>Quais palestrantes já estão confirmados para o Encontro?</summary>
+      <p>Até o momento são 13 palestrantes confirmados. Os nomes e as atualizações estão no site oficial: <a href="https://encontropilates.com.br/">encontropilates.com.br</a></p>
+    </details>
+    <details>
+      <summary>Qual a programação e quando escolho meus workshops?</summary>
+      <p>A grade está em fase final de definição dos temas de cada palestrante. A escolha de workshops será liberada em breve, e todos os inscritos serão avisados por e-mail.</p>
+    </details>
+    <details>
+      <summary>Onde vejo as informações gerais do evento?</summary>
+      <p>No site oficial: <a href="https://encontropilates.com.br/">encontropilates.com.br</a></p>
+    </details>
+  </div>
+</section>
+
+<section style="text-align:center;padding-top:0">
+  <div class="wrap">
+    <p class="rotulo">Última chamada</p>
+    <h2>Garanta sua vaga com a condição de Ecossistema.</h2>
+    <p class="sub" style="margin:12px auto 0">Faça sua inscrição pelo Portal da VOLL com o seu desconto de Licenciado ou Treinador aplicado automaticamente, sem cupom.</p>
+    <a class="btn" href="https://portal.grupovoll.com.br/">Fazer minha inscrição</a>
+    <span class="nota-btn">Desconto de Ecossistema disponível a partir do meio-dia de 08 de setembro</span>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Encontro Brasileiro de Pilates 2027 · 27 a 29 de agosto</span>
+    <span>VOLL Pilates Group</span>
+  </div>
+  <div class="wrap" style="justify-content:center;margin-top:10px">
+    <span>Campinas, SP, Brasil.</span>
+  </div>
+</footer>
+
+</body>
+</html>
